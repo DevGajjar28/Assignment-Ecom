@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "name": "Honor 6A (Pro)",
+    "price": "$214.07",
+    "originalPrice": "$765.89",
+    "imagesrc": "http://dummyimage.com/138x100.png/dddddd/000000",
+    "imageAlt": "Wiegand LLC"
+  },
+  {
+    "id": 2,
+    "name": "Philips X712",
+    "price": "$106.02",
+    "originalPrice": "$376.06",
+    "imagesrc": "http://dummyimage.com/163x100.png/5fa2dd/ffffff",
+    "imageAlt": "Raynor Group"
+  },
+  {
+    "id": 3,
+    "name": "Sagem my401C",
+    "price": "$30.09",
+    "originalPrice": "$376.28",
+    "imagesrc": "http://dummyimage.com/222x100.png/ff4444/ffffff",
+    "imageAlt": "Runolfsdottir and Sons"
+  },
+  {
+    "id": 4,
+    "name": "Vodafone Smart Tab III 10.1",
+    "price": "$243.09",
+    "originalPrice": "$513.97",
+    "imagesrc": "http://dummyimage.com/114x100.png/5fa2dd/ffffff",
+    "imageAlt": "Fisher, Grady and Bednar"
+  },
+  {
+    "id": 5,
+    "name": "BenQ M580",
+    "price": "$263.67",
+    "originalPrice": "$329.81",
+    "imagesrc": "http://dummyimage.com/167x100.png/5fa2dd/ffffff",
+    "imageAlt": "Bogan-Blick"
+  },
+  {
+    "id": 6,
+    "name": "Huawei Ascend GX1",
+    "price": "$317.41",
+    "originalPrice": "$894.04",
+    "imagesrc": "http://dummyimage.com/149x100.png/dddddd/000000",
+    "imageAlt": "Rogahn, Thiel and Heller"
+  },
+  {
+    "id": 7,
+    "name": "Nokia 5140",
+    "price": "$136.81",
+    "originalPrice": "$530.77",
+    "imagesrc": "http://dummyimage.com/187x100.png/5fa2dd/ffffff",
+    "imageAlt": "Shields-Tillman"
+  },
+  {
+    "id": 8,
+    "name": "Spice M-5390 Boss Double XL",
+    "price": "$386.43",
+    "originalPrice": "$80.69",
+    "imagesrc": "http://dummyimage.com/136x100.png/5fa2dd/ffffff",
+    "imageAlt": "Bergstrom-Kovacek"
+  },
+  {
+    "id": 9,
+    "name": "alcatel OT Easy",
+    "price": "$142.99",
+    "originalPrice": "$849.39",
+    "imagesrc": "http://dummyimage.com/173x100.png/cc0000/ffffff",
+    "imageAlt": "Kirlin, Ryan and Marks"
+  },
+  {
+    "id": 10,
+    "name": "Micromax GC700",
+    "price": "$383.55",
+    "originalPrice": "$844.77",
+    "imagesrc": "http://dummyimage.com/204x100.png/5fa2dd/ffffff",
+    "imageAlt": "Legros and Sons"
+  },
+  {
+    "id": 11,
+    "name": "Philips W8568",
+    "price": "$350.62",
+    "originalPrice": "$947.31",
+    "imagesrc": "http://dummyimage.com/154x100.png/5fa2dd/ffffff",
+    "imageAlt": "Heller, Witting and Johns"
+  },
+  {
+    "id": 12,
+    "name": "Oppo F9 (F9 Pro)",
+    "price": "$59.43",
+    "originalPrice": "$192.02",
+    "imagesrc": "http://dummyimage.com/230x100.png/ff4444/ffffff",
+    "imageAlt": "Monahan LLC"
+  },
+  {
+    "id": 13,
+    "name": "Motorola V878",
+    "price": "$399.70",
+    "originalPrice": "$680.45",
+    "imagesrc": "http://dummyimage.com/196x100.png/ff4444/ffffff",
+    "imageAlt": "Mertz LLC"
+  },
+  {
+    "id": 14,
+    "name": "Huawei Y5 lite (2018)",
+    "price": "$438.36",
+    "originalPrice": "$421.15",
+    "imagesrc": "http://dummyimage.com/109x100.png/cc0000/ffffff",
+    "imageAlt": "Harris, Casper and Abernathy"
+  },
+  {
+    "id": 15,
+    "name": "Apple iPad Wi-Fi + 3G",
+    "price": "$388.44",
+    "originalPrice": "$391.12",
+    "imagesrc": "http://dummyimage.com/208x100.png/cc0000/ffffff",
+    "imageAlt": "Willms-Kihn"
+  },
+  {
+    "id": 16,
+    "name": "Maxwest Astro 6",
+    "price": "$245.62",
+    "originalPrice": "$340.55",
+    "imagesrc": "http://dummyimage.com/169x100.png/ff4444/ffffff",
+    "imageAlt": "Reynolds, Morar and Koelpin"
+  },
+  {
+    "id": 17,
+    "name": "Spice Stellar 600 (Mi-600)",
+    "price": "$144.71",
+    "originalPrice": "$568.22",
+    "imagesrc": "http://dummyimage.com/161x100.png/ff4444/ffffff",
+    "imageAlt": "Lowe, Zulauf and Rice"
+  },
+  {
+    "id": 18,
+    "name": "Toshiba G810",
+    "price": "$215.54",
+    "originalPrice": "$355.47",
+    "imagesrc": "http://dummyimage.com/139x100.png/5fa2dd/ffffff",
+    "imageAlt": "Kovacek LLC"
+  },
+  {
+    "id": 19,
+    "name": "LG X screen",
+    "price": "$354.19",
+    "originalPrice": "$708.10",
+    "imagesrc": "http://dummyimage.com/141x100.png/5fa2dd/ffffff",
+    "imageAlt": "Reinger and Sons"
+  },
+  {
+    "id": 20,
+    "name": "HTC ChaCha",
+    "price": "$304.02",
+    "originalPrice": "$146.60",
+    "imagesrc": "http://dummyimage.com/121x100.png/ff4444/ffffff",
+    "imageAlt": "Williamson LLC"
+  },
+  {
+    "id": 21,
+    "name": "Celkon CT 9",
+    "price": "$281.96",
+    "originalPrice": "$123.99",
+    "imagesrc": "http://dummyimage.com/176x100.png/ff4444/ffffff",
+    "imageAlt": "Schoen-Purdy"
+  },
+  {
+    "id": 22,
+    "name": "Meizu M1 Metal",
+    "price": "$374.44",
+    "originalPrice": "$401.77",
+    "imagesrc": "http://dummyimage.com/168x100.png/ff4444/ffffff",
+    "imageAlt": "Parisian, Zboncak and Okuneva"
+  },
+  {
+    "id": 23,
+    "name": "vivo V17 (Russia)",
+    "price": "$240.17",
+    "originalPrice": "$461.17",
+    "imagesrc": "http://dummyimage.com/239x100.png/dddddd/000000",
+    "imageAlt": "Schaden Group"
+  },
+  {
+    "id": 24,
+    "name": "Honor 30S",
+    "price": "$97.97",
+    "originalPrice": "$687.41",
+    "imagesrc": "http://dummyimage.com/224x100.png/dddddd/000000",
+    "imageAlt": "Kuhlman Group"
+  },
+  {
+    "id": 25,
+    "name": "Motorola V295",
+    "price": "$100.20",
+    "originalPrice": "$963.10",
+    "imagesrc": "http://dummyimage.com/166x100.png/ff4444/ffffff",
+    "imageAlt": "Dickinson, Schiller and Ebert"
+  },
+  {
+    "id": 26,
+    "name": "Huawei G6600 Passport",
+    "price": "$141.41",
+    "originalPrice": "$754.16",
+    "imagesrc": "http://dummyimage.com/165x100.png/dddddd/000000",
+    "imageAlt": "Nitzsche-Murray"
+  },
+  {
+    "id": 27,
+    "name": "Micromax X278",
+    "price": "$446.13",
+    "originalPrice": "$94.15",
+    "imagesrc": "http://dummyimage.com/156x100.png/cc0000/ffffff",
+    "imageAlt": "Abshire LLC"
+  },
+  {
+    "id": 28,
+    "name": "Wiko Lenny3",
+    "price": "$196.12",
+    "originalPrice": "$995.46",
+    "imagesrc": "http://dummyimage.com/240x100.png/ff4444/ffffff",
+    "imageAlt": "Gerlach, Stoltenberg and Little"
+  },
+  {
+    "id": 29,
+    "name": "Nokia N900",
+    "price": "$96.10",
+    "originalPrice": "$823.26",
+    "imagesrc": "http://dummyimage.com/159x100.png/dddddd/000000",
+    "imageAlt": "Sawayn, Renner and Hansen"
+  },
+  {
+    "id": 30,
+    "name": "Sony Ericsson W850",
+    "price": "$475.70",
+    "originalPrice": "$856.57",
+    "imagesrc": "http://dummyimage.com/164x100.png/ff4444/ffffff",
+    "imageAlt": "McCullough Group"
+  },
+  {
+    "id": 31,
+    "name": "BLU Studio 5.5 HD",
+    "price": "$344.36",
+    "originalPrice": "$370.99",
+    "imagesrc": "http://dummyimage.com/133x100.png/ff4444/ffffff",
+    "imageAlt": "McCullough and Sons"
+  },
+  {
+    "id": 32,
+    "name": "NEC e808y",
+    "price": "$428.63",
+    "originalPrice": "$614.63",
+    "imagesrc": "http://dummyimage.com/246x100.png/ff4444/ffffff",
+    "imageAlt": "Hodkiewicz Inc"
+  },
+  {
+    "id": 33,
+    "name": "Infinix S4",
+    "price": "$480.88",
+    "originalPrice": "$600.85",
+    "imagesrc": "http://dummyimage.com/166x100.png/dddddd/000000",
+    "imageAlt": "Lang Group"
+  },
+  {
+    "id": 34,
+    "name": "LG KM710",
+    "price": "$45.21",
+    "originalPrice": "$458.96",
+    "imagesrc": "http://dummyimage.com/119x100.png/dddddd/000000",
+    "imageAlt": "Daniel, Doyle and Barrows"
+  },
+  {
+    "id": 35,
+    "name": "Lenovo K860",
+    "price": "$88.89",
+    "originalPrice": "$343.50",
+    "imagesrc": "http://dummyimage.com/135x100.png/dddddd/000000",
+    "imageAlt": "Crona-Gottlieb"
+  },
+  {
+    "id": 36,
+    "name": "Philips X128",
+    "price": "$288.27",
+    "originalPrice": "$561.99",
+    "imagesrc": "http://dummyimage.com/132x100.png/5fa2dd/ffffff",
+    "imageAlt": "Mayer Inc"
+  },
+  {
+    "id": 37,
+    "name": "vivo X50e",
+    "price": "$263.20",
+    "originalPrice": "$723.42",
+    "imagesrc": "http://dummyimage.com/211x100.png/cc0000/ffffff",
+    "imageAlt": "Emard-Kozey"
+  },
+  {
+    "id": 38,
+    "name": "OnePlus 8T+ 5G",
+    "price": "$47.97",
+    "originalPrice": "$310.42",
+    "imagesrc": "http://dummyimage.com/236x100.png/ff4444/ffffff",
+    "imageAlt": "Kuvalis, DuBuque and Gorczany"
+  },
+  {
+    "id": 39,
+    "name": "Sharp 940SH",
+    "price": "$105.13",
+    "originalPrice": "$526.92",
+    "imagesrc": "http://dummyimage.com/141x100.png/dddddd/000000",
+    "imageAlt": "Mohr, Green and Hermann"
+  },
+  {
+    "id": 40,
+    "name": "Micromax Vdeo 5",
+    "price": "$194.62",
+    "originalPrice": "$964.12",
+    "imagesrc": "http://dummyimage.com/122x100.png/5fa2dd/ffffff",
+    "imageAlt": "Hettinger-Corkery"
+  }
+]

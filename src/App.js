@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar, { NavbarWithMegaMenu } from './components/Navbar'
+import ShoppingCart from './components/ShoppingCart'
+import Login from './components/Login';
+import Register from './components/Register';
+import Product from './components/Product';
+// import NewArrivalCarousel from './components/NewArrivalCarousel';
+// import NewArrivalsCarousel from './components/NewArrivalCarousel';
+import Preview from './components/Preview';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+
+<Router>
+      <Navbar />
+      {/* <NewArrivalsCarousel/> */}
+      <Product/>
+      <Routes>
+        {/* <Route path="/" element={<HomePage />} /> */}
+        <Route path="/ShoppingCart" element={<ShoppingCart />} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/Register" element={<Register/>} />
+        <Route path="/Preview" element={<Preview/>} />
+        <Route path="/Product" element={<Product />} />
+        <Route path="/Preview" element={<Preview />} />
+
+        {/* <Route path="/Preview/:productId" element={<Preview />} /> */}
+
+
+      </Routes>
+    </Router>
+    
+    
+    </>
+  )
 }
 
-export default App;
+export default App
