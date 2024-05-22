@@ -13,13 +13,16 @@
   ```
 */
 import { Fragment, useState } from "react";
+import './styles.css'
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
+
 import {
   Bars3Icon,
   MagnifyingGlassIcon,
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import SearchBar from "./SearchBar";
 
 const navigation = {
   categories: [
@@ -157,6 +160,10 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const handleSearch = (query) => {
+    // Perform search operations with the query
+    console.log('Search query:', query);
+  };
 
   return (
     <div className="bg-white">
@@ -301,7 +308,7 @@ export default function Navbar() {
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
                   <div className="flow-root">
                     <a
-                      href="#"
+                      href="/Login"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Sign in
@@ -309,7 +316,7 @@ export default function Navbar() {
                   </div>
                   <div className="flow-root">
                     <a
-                      href="#"
+                      href="/Register"
                       className="-m-2 block p-2 font-medium text-gray-900"
                     >
                       Create account
@@ -317,7 +324,7 @@ export default function Navbar() {
                   </div>
                 </div>
 
-                <div className="border-t border-gray-200 px-4 py-6">
+                {/* <div className="border-t border-gray-200 px-4 py-6">
                   <a href="#" className="-m-2 flex items-center p-2">
                     <img
                       src="https://tailwindui.com/img/flags/flag-canada.svg"
@@ -329,7 +336,7 @@ export default function Navbar() {
                     </span>
                     <span className="sr-only">, change currency</span>
                   </a>
-                </div>
+                </div> */}
               </Dialog.Panel>
             </Transition.Child>
           </div>
@@ -337,9 +344,9 @@ export default function Navbar() {
       </Transition.Root>
 
       <header className="relative bg-white">
-        <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get free delivery on orders over $100
-        </p>
+      <div className="flex h-10 items-center justify-center bg-black text-sm font-medium text-white sm:px-6 lg:px-8 overflow-hidden">
+      <p className="roaming-text font-gaming">Get free delivery on orders over $100</p>
+    </div>
 
         <nav aria-label="Top" className="mx-auto max-w-8xl sm:px-6 lg:px-8">
           <div className="border-b border-gray-200">
@@ -356,15 +363,13 @@ export default function Navbar() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
-                  <span className="sr-only">Your Company</span>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    alt=""
-                  />
-                </a>
-              </div>
+  <a href="#">
+    <span className="sr-only">X-MAXS</span>
+    <div className="text-xl font-bold text-black">
+      X-MaXs
+    </div>
+  </a>
+</div>
 
               {/* Flyout menus */}
               <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
@@ -395,7 +400,7 @@ export default function Navbar() {
                             leaveFrom="opacity-100"
                             leaveTo="opacity-0"
                           >
-                            <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500">
+                            <Popover.Panel className="absolute inset-x-0 top-full text-sm text-gray-500 z-50">
                               {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                               <div
                                 className="absolute inset-0 top-1/2 bg-white shadow"
@@ -490,22 +495,8 @@ export default function Navbar() {
                 </div>
               </Popover.Group>
 
-              {/* Search */}
-              <div className="flex lg:flex-1 lg:items-center lg:justify-center">
-                {" "}
-                {/* Remove hidden class */}
-                <div className="flex items-center w-full max-w-md mx-auto bg-gray-100 rounded-md">
-                  <input
-                    type="text"
-                    placeholder="Search..."
-                    className="flex-1 appearance-none bg-transparent border-none w-full text-gray-700 py-2 px-4 leading-tight focus:outline-none"
-                  />
-                  <MagnifyingGlassIcon
-                    className="h-6 w-6 text-gray-400 mr-4"
-                    aria-hidden="true"
-                  />
-                </div>
-              </div>
+              {/* search */}
+              {/* <SearchBar onSearch={handleSearch} /> */}
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">

@@ -7,13 +7,14 @@ import Register from './components/Register';
 import Product from './components/Product';
 import ProductDetails from './components/ProductDetails';
 import HomePage from './components/HomePage';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        
+        {/* <SearchBar/> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/ShoppingCart" element={<ShoppingCart />} />

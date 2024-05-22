@@ -86,16 +86,7 @@ const ProductDetails = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-2">
-                  <a
-                    href={product.sizeChart}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 underline"
-                  >
-                    View Size Chart
-                  </a>
-                </div>
+             
               </div>
               <div className="mt-4">
                 <h2 className="text-lg font-medium text-gray-900">Colors</h2>
