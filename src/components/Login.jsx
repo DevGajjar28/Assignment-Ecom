@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+
+//Login/Sign in
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -11,15 +13,22 @@ function Login() {
     <>
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-lg">
-          <h1 className="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">Get started today</h1>
-          <p className="mx-auto mt-4 max-w-md text-center text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati sunt dolores deleniti inventore quaerat mollitia?
-          </p>
-          <form action="#" className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
-            <p className="text-center text-lg font-medium">Sign in to your account</p>
+          <h1 className="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">
+            let's Join us{" "}
+          </h1>
+         
+          <form
+            action="#"
+            className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8"
+          >
+            <p className="text-center text-lg font-medium">
+              Sign in to your account
+            </p>
 
             <div>
-              <label htmlFor="email" className="sr-only">Email</label>
+              <label htmlFor="email" className="sr-only">
+                Email
+              </label>
               <div className="relative">
                 <input
                   type="email"
@@ -46,14 +55,19 @@ function Login() {
             </div>
 
             <div>
-              <label htmlFor="password" className="sr-only">Password</label>
+              <label htmlFor="password" className="sr-only">
+                Password
+              </label>
               <div className="relative">
                 <input
                   type={showPassword ? "text" : "password"}
                   className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
                   placeholder="Enter password"
                 />
-                <span className="absolute inset-y-0 end-0 grid place-content-center px-4 cursor-pointer" onClick={togglePasswordVisibility}>
+                <span
+                  className="absolute inset-y-0 end-0 grid place-content-center px-4 cursor-pointer"
+                  onClick={togglePasswordVisibility}
+                >
                   {showPassword ? (
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +118,9 @@ function Login() {
 
             <p className="text-center text-sm text-gray-500">
               No account?
-              <a className="underline" href="/Register">Sign up</a>
+              <a className="underline" href="/Register">
+                Sign up
+              </a>
             </p>
           </form>
         </div>

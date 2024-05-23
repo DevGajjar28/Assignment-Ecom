@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
+/*
+    -> searching and providing user search
+    -> why use ? make easy , user friendly, time saving
+    -> fetching data from Product component 
+    
+*/
+
+
+
 function SearchBar({ onSearch }) {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState("");
 
   const handleChange = (e) => {
     const value = e.target.value;

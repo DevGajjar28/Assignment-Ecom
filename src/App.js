@@ -7,13 +7,18 @@ import Register from './components/Register';
 import Product from './components/Product';
 import ProductDetails from './components/ProductDetails';
 import HomePage from './components/HomePage';
-import SearchBar from './components/SearchBar';
+import BackButton from './BackButton';
+
 
 function App() {
+
+
   return (
     <>
       <Router>
+
         <Navbar />
+        <BackButton />
         {/* <SearchBar/> */}
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -22,6 +27,7 @@ function App() {
           <Route path="/Register" element={<Register />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/ProductDetails/:productId" element={<ProductDetails />} />
+
           {/* Default route */}
           <Route path="*" element={<HomePage />} />
         </Routes>

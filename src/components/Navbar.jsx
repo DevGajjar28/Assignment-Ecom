@@ -1,28 +1,14 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
 import { Fragment, useState } from "react";
-import './styles.css'
+import "./styles.css";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
+
+//navigaton bar with reponsive in all devices / hamburgar
 
 import {
   Bars3Icon,
-  MagnifyingGlassIcon,
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import SearchBar from "./SearchBar";
 
 const navigation = {
   categories: [
@@ -32,17 +18,16 @@ const navigation = {
       featured: [
         {
           name: "New Arrivals",
-          href: "#",
+          href: "/Product",
           imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
-          imageAlt:
-            "Models sitting back to back, wearing Basic Tee in black and bone.",
+            "https://t3.ftcdn.net/jpg/05/87/94/64/240_F_587946415_upJ9ExdlplOEZe40kIj6I8Eij7IVBY7Y.jpg",
+          imageAlt: "Models sitting back to back, wearing Basic shoes ",
         },
         {
-          name: "Basic Tees",
+          name: "Basic shoes",
           href: "#",
           imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg",
+            "https://t4.ftcdn.net/jpg/03/96/83/53/240_F_396835333_lzJlGiMB1pBOrbsgFnzXcQioyiJyoZgP.jpg",
           imageAlt:
             "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
         },
@@ -50,17 +35,17 @@ const navigation = {
       sections: [
         {
           id: "clothing",
-          name: "Clothing",
+          name: "All shoes",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Dresses", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Denim", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
-            { name: "Activewear", href: "#" },
-            { name: "Browse All", href: "#" },
+            { name: "New", href: "/Product" },
+            { name: "Jordan", href: "/Product" },
+            { name: "Lifestyle", href: "/Product" },
+            { name: "Running", href: "/Product" },
+            { name: "Badminton", href: "/Product" },
+            { name: "FootBall", href: "/Product" },
+            { name: "BasketBall", href: "/Product" },
+            { name: "Gym", href: "/Product" },
+            { name: "Slides", href: "/Product" },
           ],
         },
         {
@@ -96,7 +81,7 @@ const navigation = {
           name: "New Arrivals",
           href: "#",
           imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
+            "https://t3.ftcdn.net/jpg/03/88/43/88/240_F_388438866_FTjD0dqTNURBJjgmBFH4lXOL7SHawpm1.jpg",
           imageAlt:
             "Drawstring top with elastic loop closure and textured interior padding.",
         },
@@ -104,23 +89,22 @@ const navigation = {
           name: "Artwork Tees",
           href: "#",
           imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg",
-          imageAlt:
-            "Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.",
+            "https://t3.ftcdn.net/jpg/03/91/53/22/240_F_391532244_iYo66ZlHmLGbxlH0qsH6uc8Dth6tpGNO.jpg",
+          imageAlt: "shoes",
         },
       ],
       sections: [
         {
           id: "clothing",
-          name: "Clothing",
+          name: "All Shoes",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
-            { name: "Activewear", href: "#" },
-            { name: "Browse All", href: "#" },
+            { name: "New", href: "#" },
+            { name: "Jordan", href: "#" },
+            { name: "Lifestyle", href: "#" },
+            { name: "Running", href: "#" },
+            { name: "Basketball", href: "#" },
+            { name: "Gym", href: "#" },
+            { name: "Football", href: "#" },
           ],
         },
         {
@@ -149,8 +133,8 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
+    { name: "Company", href: "/Product" },
+    { name: "Stores", href: "/Product" },
   ],
 };
 
@@ -160,10 +144,6 @@ function classNames(...classes) {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const handleSearch = (query) => {
-    // Perform search operations with the query
-    console.log('Search query:', query);
-  };
 
   return (
     <div className="bg-white">
@@ -270,7 +250,7 @@ export default function Navbar() {
                               {section.name}
                             </p>
                             <ul
-                              role="list"
+                              // role="list"
                               aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
                               className="mt-6 flex flex-col space-y-6"
                             >
@@ -323,30 +303,18 @@ export default function Navbar() {
                     </a>
                   </div>
                 </div>
-
-                {/* <div className="border-t border-gray-200 px-4 py-6">
-                  <a href="#" className="-m-2 flex items-center p-2">
-                    <img
-                      src="https://tailwindui.com/img/flags/flag-canada.svg"
-                      alt=""
-                      className="block h-auto w-5 flex-shrink-0"
-                    />
-                    <span className="ml-3 block text-base font-medium text-gray-900">
-                      CAD
-                    </span>
-                    <span className="sr-only">, change currency</span>
-                  </a>
-                </div> */}
               </Dialog.Panel>
             </Transition.Child>
           </div>
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white">
-      <div className="flex h-10 items-center justify-center bg-black text-sm font-medium text-white sm:px-6 lg:px-8 overflow-hidden">
-      <p className="roaming-text font-gaming">Get free delivery on orders over $100</p>
-    </div>
+      <header className="relative" style={{ backgroundColor: "#DDDDDD" }}>
+        <div className="flex h-10 items-center justify-center bg-black text-sm font-medium text-white sm:px-6 lg:px-8 overflow-hidden">
+          <p className="roaming-text font-gaming">
+            Get free delivery on orders over $100
+          </p>
+        </div>
 
         <nav aria-label="Top" className="mx-auto max-w-8xl sm:px-6 lg:px-8">
           <div className="border-b border-gray-200">
@@ -363,13 +331,11 @@ export default function Navbar() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-  <a href="#">
-    <span className="sr-only">X-MAXS</span>
-    <div className="text-xl font-bold text-black">
-      X-MaXs
-    </div>
-  </a>
-</div>
+                <a href="/">
+                  <span className="sr-only">X-MAXS</span>
+                  <div className="text-xl font-bold text-black">NxP</div>
+                </a>
+              </div>
 
               {/* Flyout menus */}
               <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
@@ -452,7 +418,7 @@ export default function Navbar() {
                                             {section.name}
                                           </p>
                                           <ul
-                                            role="list"
+                                            // role="list"
                                             aria-labelledby={`${section.name}-heading`}
                                             className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                           >

@@ -1,9 +1,13 @@
-import React from 'react';
+import React from "react";
+import Product from "./Product";
+import './styles.css'
 
 function HomePage() {
   const navigateToProductPage = () => {
-    window.location.href = "/Product"; // Redirect to the Product page
+    window.location.href = "/Product"; 
   };
+
+  //Landing page layout
 
   const Card = ({ href, imgSrc, altText, caption, className }) => (
     <a href={href} className={`card ${className}`}>
@@ -11,9 +15,7 @@ function HomePage() {
         <img className="card-img" src={imgSrc} alt={altText} />
         <figcaption className="figcaption">{caption}</figcaption>
       </figure>
-      
     </a>
-    
   );
 
   return (
@@ -51,12 +53,19 @@ function HomePage() {
         </div>
         <button
           onClick={navigateToProductPage}
-          className="absolute  left-1/2 transform -translate-x-1/2 bg-black text-white text-2xl font-bold py-2 px-4 rounded-mid hover:bg-white hover:text-black transition-colors duration-300 transition-transform duration-300 ease-in-out hover:scale-105"
+          
+          className="absolute  left-1/2 transform -translate-x-1/2 bg-black text-white text-2xl font-bold py-2 px-4 rounded-mid hover:bg-white hover:text-black transition-colors duration-300 transition-transform duration-300 ease-in-out hover:scale-105 font-cool"
         >
-          Explore
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl hover:bg-black hover:text-white font-cool">
+            We sell smiles
+          </p>
+          <p className="text-xl sm:text-xl md:text-2xl lg:text-3xl hover:">
+            EXPLORE
+          </p>
         </button>
-       
       </section>
+
+      <Product />
     </>
   );
 }
