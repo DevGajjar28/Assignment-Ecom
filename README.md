@@ -20,10 +20,13 @@ Welcome to the Ecom Project! This is an e-commerce application built using React
 
 ## Features
 - Responsive design using TailwindCSS
-- Smooth animations with GSAP
+- Smooth user interface
 - Navigation and routing using React Router
 - FontAwesome icons for a modern look
 - Various UI components with Material Tailwind and Headless UI
+- Searching keyword(make user easy to use)
+- pagination
+
 
 ## Installation
 Follow these steps to set up the project locally:
@@ -133,3 +136,7 @@ The project comes with the following npm scripts:
 
 ## commit-history
 ![Screenshot 2024-05-24 225725](https://github.com/DevGajjar28/Assignment-Ecom/assets/145287513/12d235b4-b616-4843-858a-34054d1c7943)
+
+## probelm
+For each product, clicking on the “Inquire on Whatsapp” button should redirect to open a whatsapp message sending to the phone number (+91-8787878787) saying: “Hey, I am interested in buying [product_name]-[price].”
+ -> messgae was not sent in this number because it not saved. if i am using saved number than it will sending the message 
