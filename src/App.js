@@ -8,6 +8,7 @@ import Product from './components/Product';
 import ProductDetails from './components/ProductDetails';
 import HomePage from './components/HomePage';
 import BackButton from './BackButton';
+import Reviews from './components/Reviews';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path="/Register" element={<Register />} />
           <Route path="/Product" element={<Product />} />
           <Route path="/ProductDetails/:productId" element={<ProductDetails />} />
+          <Route path="/Reviews" element={<Reviews/>} />
 
           {/* Default route */}
           <Route path="*" element={<HomePage />} />

@@ -9,6 +9,7 @@ import {
   faXTwitter
 
 } from "@fortawesome/free-brands-svg-icons";
+import Reviews from "./Reviews";
 
 /*
       -> main component for product detials
@@ -111,7 +112,7 @@ const ProductDetails = () => {
                 <h2 className="text-lg font-medium text-gray-900">
                   Description
                 </h2>
-                <p className="text-sm text-gray-600">{product.description}</p>
+                <p className="text-sm text-gray-600 leading-relaxed text-justify" >{product.description}</p>
               </div>
               <div className="mt-4">
                 <h2 className="text-lg font-medium text-gray-900">Sizes</h2>
@@ -189,7 +190,7 @@ const ProductDetails = () => {
                 <button
                   onClick={handleShareOnWhatsapp}
                   href="https://www.whatsapp.com/"
-                  className="flex-grow bg-black text-white px-4 py-2 rounded-md hover:bg-green-700 flex items-center justify-center"
+                  className="flex-grow bg-black text-white px-4 py-2 rounded-md hover:bg-blue-700 flex items-center justify-center"
                 >
                   <FontAwesomeIcon icon={faFacebook} className="w-4 h-4 ml-2" />
                 </button>
@@ -231,8 +232,9 @@ const ProductDetails = () => {
               ))}
             </div>
           </div>
+          <Reviews/>
           {/* Recommended Products Section */}
-          <div className="mt-10">
+          <div className="mt-16">
             <h2 className="text-2xl font-bold text-gray-900">
               Recommended Products
             </h2>
