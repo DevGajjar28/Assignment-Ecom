@@ -41,7 +41,7 @@ const ProductDetails = () => {
 
   const handleInquireOnWhatsapp = () => {
     const message = `Hey, I am interested in buying ${product.name} (${selectedSize}) for ${product.price}. Here's the photo: ${mainImage}`;
-    const whatsappLink = `https://wa.me/919876543210?text=${encodeURIComponent(
+    const whatsappLink = `https://wa.me/918787878787?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappLink, "_blank");
