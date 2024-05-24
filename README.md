@@ -11,7 +11,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [Scripts](#scripts)
 - [Dependencies](#dependencies)
 - [Dev Dependencies](#dev-dependencies)
-- [License](#license)
+- [Video/overview](#Video/overview)
+- [Screenshot](#Screenshot)
 
 ## Introduction
 Welcome to the Ecom Project! This is an e-commerce application built using React. You can check out the live version of the project [here](https://DevGajjar28.github.io/Assignment-Ecom/).
@@ -96,7 +97,14 @@ The project comes with the following npm scripts:
 - `gh-pages`: ^6.1.1
 - `tailwindcss`: ^3.4.3
 
+  
 
+## Video/overview
+[View File 1](https://drive.google.com/file/d/180J01NmjaNVKccOjwZOa74E_8l0GiT0n/preview)
+[View File 2](https://drive.google.com/file/d/1QBAjHOu8UiyFhYhvlcRpuGrYgIUGYbNu/preview)
+
+
+## Screenshot
 [Screenshot 2024-05-24 221832](https://github.com/DevGajjar28/Assignment-Ecom/assets/145287513/728ce0dc-8172-48c6-8525-9686625f7dd7)
 ![Screenshot 2024-05-24 221853](https://github.com/DevGajjar28/Assignment-Ecom/assets/145287513/7e4786fc-ffe4-4b3f-979f-02b82b937728)
 ![Screenshot 2024-05-24 221913](https://github.com/DevGajjar28/Assignment-Ecom/assets/145287513/59a992ab-88e3-4236-9e48-58c02e39071d)
